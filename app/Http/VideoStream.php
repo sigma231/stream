@@ -80,17 +80,17 @@ class VideoStream
 
     private function stream()
     {
-        $i = $this->start;
+        $progress = $this->start;
         set_time_limit(0);
-        while(!feof($this->stream) && $i <= $this->end) {
+        while(!feof($this->stream) && $progress <= $this->end) {
             $bytesToRead = $this->buffer;
-            if(($i+$bytesToRead) > $this->end) {
-                $bytesToRead = $this->end - $i + 1;
+            if(($progress+$bytesToRead) > $this->end) {
+                $bytesToRead = $this->end - $progress + 1;
             }
             $data = fread($this->stream, $bytesToRead);
             echo $data;
             flush();
-            $i += $bytesToRead;
+            $progress += $bytesToRead;
         }
     }
     function start()
