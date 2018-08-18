@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "c6e2278a7544d33a77ea67bffee9b08d",
     "content-hash": "cc4422cc8963af4f9f32f63af5f3528c",
     "packages": [
@@ -184,6 +185,12 @@
             "time": "2018-07-24 23:27:56"
         },
         {
+=======
+    "hash": "1921154ed0d1e38a8507987db4859dcf",
+    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "packages": [
+        {
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
@@ -544,6 +551,7 @@
             "time": "2018-02-07 20:20:57"
         },
         {
+<<<<<<< HEAD
             "name": "firebase/php-jwt",
             "version": "v5.0.0",
             "source": {
@@ -771,6 +779,8 @@
             "time": "2017-03-20 17:10:46"
         },
         {
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -941,6 +951,7 @@
                 "phpunit/phpunit": "~7.0",
                 "predis/predis": "^1.1.1",
                 "symfony/css-selector": "~4.0",
+<<<<<<< HEAD
                 "symfony/dom-crawler": "~4.0"
             },
             "suggest": {
@@ -1156,20 +1167,57 @@
             },
             "suggest": {
                 "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
+=======
+                "symfony/dom-crawler": "~4.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.6).",
+                "ext-pcntl": "Required to use all features of the queue worker.",
+                "ext-posix": "Required to use all features of the queue worker.",
+                "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
+                "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~6.0).",
+                "laravel/tinker": "Required to use the tinker console command (~1.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+                "league/flysystem-cached-adapter": "Required to use the Flysystem cache (~1.0).",
+                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
+                "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (~1.0).",
+                "nexmo/client": "Required to use the Nexmo transport (~1.0).",
+                "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
+                "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
+                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~3.0).",
+                "symfony/css-selector": "Required to use some of the crawler integration testing tools (~4.0).",
+                "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (~4.0).",
+                "symfony/psr-http-message-bridge": "Required to psr7 bridging features (~1.0)."
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Lcobucci\\JWT\\": "src"
+=======
+                    "dev-master": "5.6-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Illuminate/Foundation/helpers.php",
+                    "src/Illuminate/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Illuminate\\": "src/Illuminate/"
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
+<<<<<<< HEAD
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -1206,16 +1254,74 @@
             "require-dev": {
                 "henrikbjorn/phpspec-code-coverage": "~1.0.1",
                 "phpspec/phpspec": "~2.0.0"
+=======
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Laravel Framework.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "framework",
+                "laravel"
+            ],
+            "time": "2018-06-20 14:21:11"
+        },
+        {
+            "name": "laravel/tinker",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/tinker.git",
+                "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
+                "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.1",
+                "illuminate/contracts": "~5.1",
+                "illuminate/support": "~5.1",
+                "php": ">=5.5.9",
+                "psy/psysh": "0.7.*|0.8.*|0.9.*",
+                "symfony/var-dumper": "~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "suggest": {
+                "illuminate/database": "The Illuminate Database package (~5.1)."
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "2.2-dev"
+=======
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Tinker\\TinkerServiceProvider"
+                    ]
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "League\\Event\\": "src/"
+=======
+                    "Laravel\\Tinker\\": "src/"
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1224,6 +1330,7 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Frank de Jonge",
                     "email": "info@frenky.net"
                 }
@@ -1235,6 +1342,20 @@
                 "listener"
             ],
             "time": "2015-05-21 12:24:47"
+=======
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Powerful REPL for the Laravel framework.",
+            "keywords": [
+                "REPL",
+                "Tinker",
+                "laravel",
+                "psysh"
+            ],
+            "time": "2018-05-17 13:42:07"
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
         },
         {
             "name": "league/flysystem",
@@ -1321,6 +1442,7 @@
             "time": "2018-05-07 08:44:23"
         },
         {
+<<<<<<< HEAD
             "name": "league/oauth2-server",
             "version": "7.2.0",
             "source": {
@@ -1391,6 +1513,8 @@
             "time": "2018-06-23 16:57:59"
         },
         {
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -1622,6 +1746,7 @@
             "time": "2018-06-08 15:26:40"
         },
         {
+<<<<<<< HEAD
             "name": "phpseclib/phpseclib",
             "version": "2.0.11",
             "source": {
@@ -1714,6 +1839,8 @@
             "time": "2018-04-15 16:55:05"
         },
         {
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -1763,6 +1890,7 @@
             "time": "2017-02-14 16:28:37"
         },
         {
+<<<<<<< HEAD
             "name": "psr/http-message",
             "version": "1.0.1",
             "source": {
@@ -1813,6 +1941,8 @@
             "time": "2016-08-06 14:39:51"
         },
         {
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -2763,6 +2893,7 @@
             "time": "2018-05-30 07:26:09"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/psr-http-message-bridge",
             "version": "v1.0.2",
             "source": {
@@ -2823,6 +2954,8 @@
             "time": "2017-12-19 00:31:44"
         },
         {
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             "name": "symfony/routing",
             "version": "v4.1.0",
             "source": {
@@ -3140,6 +3273,7 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+<<<<<<< HEAD
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -3203,6 +3337,8 @@
                 "psr-7"
             ],
             "time": "2018-07-24 21:54:38"
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
         }
     ],
     "packages-dev": [

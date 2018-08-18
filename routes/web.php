@@ -15,7 +15,11 @@ use App\Http\VideoStream;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::get('details', 'UserController@details');
+=======
+
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
 Route::get('/player', function(){
     $video = "video/ai_tutorial.mp4";
     $mime = "video/mp4";
@@ -26,7 +30,11 @@ Route::get('/player', function(){
 });
 Route::get('/video/{filename}', function ($filename) {
     $videosDir = base_path('resources/assets/videos');
+<<<<<<< HEAD
     if (file_exists($filePath = $videosDir."/".$filename.".mp4")) {
+=======
+    if (file_exists($filePath = $videosDir."/".$filename)) {
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
         $stream = new VideoStream($filePath);
         return response()->stream(function() use ($stream) {
             $stream->start();

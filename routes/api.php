@@ -1,11 +1,15 @@
 <?php
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\Http\VideoStream;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Response;
+=======
+
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,6 +25,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+<<<<<<< HEAD
 Route::post('login', 'UserController@login');
 Route::post('register', 'UserController@register');
 
@@ -28,12 +33,16 @@ Route::post('register', 'UserController@register');
 Route::group(['middleware' => 'auth:api'], function(){
     Route::get('details', 'UserController@details');
 });
+=======
+// Route::middleware('auth:api')->get('/player', 'playerController@streamMedia');
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
 Route::get('/get_media_listing', 'mediaController@getAllMedia');
 Route::get('/get_trending', 'mediaController@getTrending');
 Route::get('/get_episodes', 'mediaController@getMediaEpisodes');
 Route::post('/make_payment', 'paymentController@makePayment');
 Route::get('/get_payment', 'paymentController@getPaymentHistory');
 Route::get('/get_Media', 'playerController@getStream');
+<<<<<<< HEAD
 Route::get('/video/{filename}', function ($filename) {
     $videosDir = base_path('resources/assets/videos');
     if (file_exists($filePath = $videosDir."/".$filename.".mp4")) {
@@ -57,3 +66,5 @@ Route::get('/image/{image_name}', function($image_name){
     return Response::download($path);
 
 });
+=======
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492

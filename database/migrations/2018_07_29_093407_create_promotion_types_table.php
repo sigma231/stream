@@ -10,7 +10,11 @@ class CreatePromotionTypesTable extends Migration
      * Run the migrations.
      *
      * @return void
+<<<<<<< HEAD
      */ 
+=======
+     */
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
     public function up()
     {
         Schema::create('promotion_types', function (Blueprint $table) {

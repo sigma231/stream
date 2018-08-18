@@ -17,6 +17,10 @@ class CreatePromotionsTable extends Migration
             $table->increments('id');
             $table->string('promo_code');
             $table->float('amout_saved');
+<<<<<<< HEAD
+=======
+            $table->integer('coupon_type_id');
+>>>>>>> fdf66f79f7e3af9ee0ee89a7ca56a8bef9ec0492
             $table->dateTime('expiry_date');
             $table->timestamps();
         });
